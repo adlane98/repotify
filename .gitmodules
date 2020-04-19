@@ -1,6 +1,6 @@
-[submodule "repotify/cpr"]
-	path = repotify/cpr
+[submodule "cpr"]
+	path = cpr
 	url = https://github.com/whoshuu/cpr.git
-[submodule "repotify/json"]
-	path = repotify/json
+[submodule "json"]
+	path = json
 	url = https://github.com/nlohmann/json
