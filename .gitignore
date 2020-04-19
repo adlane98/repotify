@@ -1,3 +1,52 @@
-repotify/cmake-build-debug/
-repotify/.idea/
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+cmake-build-debug/
+
+# Custom
+build/
+
+# Jekyll stuff
+_includes/
+_site/
+
+# Vim
+.ycm_extra_conf.py*
+
+# Emacs
 *~
+
+# CLion
+.idea/

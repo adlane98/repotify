@@ -1,3 +1,6 @@
 [submodule "repotify/cpr"]
 	path = repotify/cpr
 	url = https://github.com/whoshuu/cpr.git
+[submodule "repotify/json"]
+	path = repotify/json
+	url = https://github.com/nlohmann/json
