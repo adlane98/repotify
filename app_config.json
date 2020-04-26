@@ -1,0 +1,15 @@
+{
+    "name": "Caciis",
+    "domain": "https://gitlab.caciis.net/",
+    "token": "token1",
+    "follow": [
+        {
+            "project": "repo-test",
+            "branches": ["master", "test"]
+        },
+        {
+            "project": "sfr-obsope",
+            "branches": ["dev-wsmajsi"]
+        }
+    ]
+}
