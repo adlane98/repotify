@@ -13,13 +13,15 @@ nlohmann::json make_request(const std::string &private_token) {
     return json_parsing;
 }
 
-void show_notification(const char* title, const char* description) {
+void showNotification(const std::string& title, const std::string& description) {
     std::cout << "Notification !" << std::endl;
-    notify_init("Test repotify");
-    NotifyNotification* n = notify_notification_new(title, description, nullptr);
+    notify_init("Repotify");
+    NotifyNotification* n = notify_notification_new(title.c_str(), description.c_str(), nullptr);
     notify_notification_set_timeout(n, 10000);
     notify_notification_show(n, nullptr);
     notify_uninit();
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(7500));
 }
 
 void write_new_commit(const nlohmann::json& json_to_write, const char* path_file) {

@@ -8,10 +8,12 @@
 
 class Domain {
 public:
-    Domain(std::string _url, std::string _token, nlohmann::json jsonProjects);
+    Domain(std::string _name, std::string _url, std::string _token, nlohmann::json jsonProjects);
     std::string urlApi;
 
+    void makeAllRequests();
 private:
+    const std::string name;
     const std::string url;
     const std::string token;
     const std::string endpointApi;
